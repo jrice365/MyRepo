@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-10 14:33:23</sys_created_on>
+        <sys_id>626fb11cdbe34010d0cd8a184896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_419571_gamify_process_desire.x_419571_gamify.user</sys_name>
+        <sys_package display_value="Gamify" source="x_419571_gamify">d7ed3d98dbe34010d0cd8a184896191d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gamify">d7ed3d98dbe34010d0cd8a184896191d</sys_scope>
+        <sys_security_acl display_value="x_419571_gamify_process_desire">666fb11cdbe34010d0cd8a1848961967</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_626fb11cdbe34010d0cd8a184896196a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-10 14:33:23</sys_updated_on>
+        <sys_user_role display_value="x_419571_gamify.user" name="x_419571_gamify.user">780eb598dbe34010d0cd8a1848961967</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>didYouKnowContent</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+	//var player = event.parm2.getLabel();
+	template.print("coming from script");
+	template.print("<br />");   
+	
+	var didYouKnow = new GlideRecord("x_419571_gamify_did_you_know");
+	didYouKnow.query();
+	
+	while(didYouKnow.next()){
+		template.print("<h1>" + didYouKnow.process.process_name + "</h1>"); 
+		template.print("<hr />");
+		template.print(didYouKnow.title);
+		template.print("<br />"); 
+		template.print(didYouKnow.content);
+		template.print("<br />"); 
+	}
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-15 20:22:01</sys_created_on>
+        <sys_id>b6aebc0adb270010d0cd8a1848961995</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>didYouKnowContent</sys_name>
+        <sys_package display_value="Gamify" source="x_419571_gamify">d7ed3d98dbe34010d0cd8a184896191d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gamify">d7ed3d98dbe34010d0cd8a184896191d</sys_scope>
+        <sys_update_name>sys_script_email_b6aebc0adb270010d0cd8a1848961995</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-15 21:41:15</sys_updated_on>
+    </sys_script_email>
+</record_update>

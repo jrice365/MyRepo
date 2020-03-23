@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Did You Know" max_length="40" name="x_419571_gamify_did_you_know" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Content" mandatory="true" max_length="8000" name="content" type="html"/>
+        <element label="Process" mandatory="true" max_length="32" name="process" reference="x_419571_gamify_gamify_process" type="reference"/>
+        <element display="true" label="Title" mandatory="true" max_length="150" name="title" type="string"/>
+        <index name="index">
+            <element name="process"/>
+        </index>
+    </element>
+</database>

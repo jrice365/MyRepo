@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Send weekly DId You Know</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>2</run_dayofweek>
+        <run_period/>
+        <run_start>2020-03-15 02:02:40</run_start>
+        <run_time>1970-01-01 16:00:00</run_time>
+        <run_type>weekly</run_type>
+        <script><![CDATA[gs.info("Getting started");
+
+// Loop thru each Process record
+var grProcess = new GlideRecord('x_419571_gamify_gamify_process');
+grProcess.query();
+
+while(grProcess.next()){
+	
+	generatePlayerEvent(grProcess);
+	
+}
+
+function generatePlayerEvent(process){
+	//gs.info("Inside Event function for process: " + process.process_name);
+	//gs.info("The sys_id of the process is: " + process.sys_id);
+	
+	var grPlayers = new GlideRecord('x_419571_gamify_player_desires');
+	grPlayers.addQuery('process', process.sys_id);
+	grPlayers.query();
+	
+	//gs.info("Player query just run");
+	
+	while(grPlayers.next()){
+		gs.info("Gamify Event to be generated for player: " + grPlayers.player.name);
+		gs.eventQueue("x_419571_gamify.Did_You_Know_Email", grPlayers, grPlayers.process.process_name, grPlayers.player.user_name);
+	}
+}
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-15 02:36:22</sys_created_on>
+        <sys_id>e283093ddb670010d0cd8a1848961956</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>Send weekly DId You Know</sys_name>
+        <sys_package display_value="Gamify" source="x_419571_gamify">d7ed3d98dbe34010d0cd8a184896191d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gamify">d7ed3d98dbe34010d0cd8a184896191d</sys_scope>
+        <sys_update_name>sysauto_script_e283093ddb670010d0cd8a1848961956</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-15 18:26:34</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

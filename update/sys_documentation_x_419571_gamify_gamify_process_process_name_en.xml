@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="process_name" label="Process Name" language="en" table="x_419571_gamify_gamify_process">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>process_name</element>
+            <help/>
+            <hint/>
+            <label>Process Name</label>
+            <language>en</language>
+            <name>x_419571_gamify_gamify_process</name>
+            <plural>Process Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-10 14:31:56</sys_created_on>
+            <sys_id>951f3d9cdbe34010d0cd8a184896193a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Process Name</sys_name>
+            <sys_package display_value="Gamify" source="x_419571_gamify">d7ed3d98dbe34010d0cd8a184896191d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Gamify">d7ed3d98dbe34010d0cd8a184896191d</sys_scope>
+            <sys_update_name>sys_documentation_x_419571_gamify_gamify_process_process_name_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-10 14:31:56</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

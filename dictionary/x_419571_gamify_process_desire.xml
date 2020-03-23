@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Process Desire" max_length="40" name="x_419571_gamify_process_desire" type="collection">
+        <element default="0" label="Actual" max_length="40" name="actual" type="integer"/>
+        <element label="% complete" max_length="15" name="complete" type="percent_complete"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Desire" max_length="40" name="desire" type="string"/>
+        <element attributes="encode_utf8=false" label="Process" max_length="32" name="process" reference="x_419571_gamify_gamify_process" type="reference"/>
+        <element default="0" label="Target" max_length="40" name="target" type="integer"/>
+        <index name="index">
+            <element name="process"/>
+        </index>
+    </element>
+</database>

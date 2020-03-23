@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Player Desires" max_length="40" name="x_419571_gamify_player_desires" type="collection">
+        <element attributes="encode_utf8=false" dependent="process" dependent_on_field="process" label="Actual" max_length="32" name="actual" reference="x_419571_gamify_process_desire" type="reference" use_dependent_field="true"/>
+        <element attributes="encode_utf8=false" dependent="process" dependent_on_field="process" display="true" label="Desire" max_length="32" name="desire" reference="x_419571_gamify_process_desire" type="reference" use_dependent_field="true"/>
+        <element attributes="encode_utf8=false" label="Player" max_length="32" name="player" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Process" max_length="32" name="process" reference="x_419571_gamify_gamify_process" type="reference"/>
+        <index name="index">
+            <element name="actual"/>
+        </index>
+        <index name="index2">
+            <element name="process"/>
+        </index>
+        <index name="index3">
+            <element name="desire"/>
+        </index>
+        <index name="index4">
+            <element name="player"/>
+        </index>
+    </element>
+</database>
