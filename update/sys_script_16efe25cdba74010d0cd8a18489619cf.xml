@@ -36,16 +36,16 @@
 
     if (current.desire.changes()) {
 		
-		if (previous.desire.nil()) {
+		//if (previous.desire.nil()) {
 			// if previous is null, then this is an insert.  No previous to update.
-			gs.debug("This is an insert.  No previous to update");
-			gs.info("Testing use of gs.info.  Does it show in debug log?");
-			gs.warn("This is a warning message");
-			gs.error("This is an error message");
-			gs.addInfoMessage("Info Message.  No previous record");
-			gs.addErrorMessage("Error Message. No previous record");
+			//gs.debug("This is an insert.  No previous to update");
+			//gs.info("Testing use of gs.info.  Does it show in debug log?");
+			//gs.warn("This is a warning message");
+			//gs.error("This is an error message");
+			//gs.addInfoMessage("Info Message.  No previous record");
+			//gs.addErrorMessage("Error Message. No previous record");
 		
-		}
+		//}
 		
 		// another way to decifer an insert vs an update can use this
 		
@@ -137,7 +137,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>16efe25cdba74010d0cd8a18489619cf</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>49</sys_mod_count>
         <sys_name>Sync Process Desire Counts</sys_name>
         <sys_overrides/>
         <sys_package display_value="Gamify" source="x_419571_gamify">d7ed3d98dbe34010d0cd8a184896191d</sys_package>
@@ -145,7 +145,7 @@
         <sys_scope display_value="Gamify">d7ed3d98dbe34010d0cd8a184896191d</sys_scope>
         <sys_update_name>sys_script_16efe25cdba74010d0cd8a18489619cf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-20 21:01:51</sys_updated_on>
+        <sys_updated_on>2020-03-23 18:22:31</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
